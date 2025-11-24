@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PROFILI KLIENT</title>
+        <link rel="stylesheet" href="../css/content.css">
+   
+ </head>
+    <body>
+    
+        <div class="content">
+            <span class="titull_fqKlientit">COFFEE DEA</span>
+          
+            <div class="mbeshtjelles">
+                <h2 class="newAccount_titull">REZERVIM:</h2>
+
+                <form>
+                    <label for="emri">EMRI</label>
+                    <input type="text" id="emri" placeholder="emri" required>
+                    
+                    <label for="tavolina">TAVOLINA</label>
+                    <input type="number" id="tavolina" placeholder='Tavolina numri' min="1">
+                  
+                    <label for="kapaciteti">KAPACITETI</label>
+                    <input type="number" id="kapaciteti" placeholder="kapaciteti" min="1" required>
+                    
+                    <label for="numer">NUMER TELEFONI:</label>
+                    <input type="tel" id="numer" placeholder="numer telefoni" required>
+                   
+                    <label for="data">DATA</label>
+                    <input type="date" id="data">
+                    
+                    <label for="ora">ORA</label>
+                    <input type="time" id="ora" >
+                
+                    <button type="button" id="rezervo">REZERVO</button>
+                </form>
+            </div>
+        </div>
+<script>
+       const rezervo=document.getElementById('rezervo');
+rezervo.addEventListener('click',()=>{
+window.location.href='../html/menu.html';
+}); 
+
+</script>
+    </body>
+</html>

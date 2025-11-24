@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PROFILI KLIENT</title>
+        <link rel="stylesheet" href="../css/content.css">
+   
+    </head>
+    <body>
+    
+        <div class="content">
+            <span class="titull_fqKlientit">COFFEE DEA</span>
+           
+            <div class="mbeshtjelles">
+                <h2 class="newAccount_titull">PROFILI</h2>
+
+                <form>
+                    <label for="emri">EMRI</label>
+                    <input type="text" id="emri" placeholder="emri" required>
+                    
+                    <label for="mbiemri">MBIEMRI</label>
+                    <input type="text" id="mbiemri" placeholder="mbiemri" required>
+                   
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" placeholder='email' required>
+                  
+                    <label for="numer">NUMER TELEFONI:</label>
+                    <input type="tel" id="numer" placeholder="numer telefoni">
+                   
+                    <label for="status">STATUSI(BESNIK):</label>
+                    <input type="text" id="status" placeholder="status">
+                    
+                    <label for="mosha">MOSHA</label>
+                    <input type="number" id="mosha" placeholder="mosha" min="1">
+                
+                    <button type="button" id="ruaj" class="ruaj">RUAJ</button>
+                </form>
+            </div>
+        </div>
+<script>
+       const ruaj=document.getElementById('ruaj');
+ruaj.addEventListener('click',()=>{
+window.location.href='../html/faqjaKryesoreKlientit.html';
+}); 
+
+</script>
+    </body>
+</html>

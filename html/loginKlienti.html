@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Klienti</title>
+        <link rel="stylesheet" href="../css/content.css">
+    </head>
+    <body>
+        <div class="content">
+            <h1 class="titull_fqKlientit">COFFEE DEA</h1>
+             
+        <div class="mbeshtjelles">
+            <h3 class="newAccount_titull">LOG IN:</h3>
+            <form>
+             <label for="username">USERNAME</label>
+            <input type="text" id="username" placeholder="username">
+           
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" placeholder="password">
+
+            <span id="forgotPassword" class="forgotPassword"><a href="#">Forgot password?</a></span>            
+           <button type="button" id="login">LOG IN</button>
+        </form>
+        </div>
+        </div>
+      <script>
+const forgotPassword = document.getElementById('forgotPassword');
+     forgotPassword.addEventListener('click',()=>{
+        window.location.href='../html/accountRiKlienti.html';
+     });
+
+     const login = document.getElementById('login');
+     login.addEventListener('click',()=>{
+        window.location.href='../html/faqjaKryesoreKlientit.html';
+     });
+
+     </script>
+    </body>
+
+</html>

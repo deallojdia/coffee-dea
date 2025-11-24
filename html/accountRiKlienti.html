@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Account Klient </title>
+        <link rel="stylesheet" href="../css/content.css">
+   
+    </head>
+    <body>
+    
+        <div class="content">
+            <span class="titull_fqKlientit">COFFEE DEA</span>
+            <div class="mbeshtjelles">
+                <h2 class="newAccount_titull">NEW ACCOUNT</h2>
+
+                <form>
+                    <label for="emri">EMRI</label>
+                    <input type="text" id="emri" placeholder="emri" required>
+                    <label for="mbiemri">MBIEMRI</label>
+                    <input type="text" id="mbiemri" placeholder="mbiemri" required>
+                   <label for="email">EMAIL</label>
+                    <input type="email" id="email" placeholder='email' required>
+                    <label for="numer">NUMER TELEFONI:</label>
+                    <input type="tel" id="numer" placeholder="numer telefoni">
+                    <label for="status">STATUSI(BESNIK):</label>
+                    <input type="text" id="status" placeholder="status">
+                    <label for="mosha">MOSHA</label>
+                    <input type="number" id="mosha" placeholder="mosha">
+                <label for="password">PASSWORD</label>
+                    <input type="password" id="password" placeholder="password" required>
+                    <button type="submit" id="butonRuaj">RUAJ</button>
+                </form> 
+        </div>
+<script>
+const butonRuaj= document.getElementById('butonRuaj');
+butonRuaj.addEventListener('click',()=>{
+window.location.href='../html/faqjaKlientit.html';
+});
+
+</script>
+    </body>
+</html>

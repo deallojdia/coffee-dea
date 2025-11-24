@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PROFILI KLIENT</title>
+        <link rel="stylesheet" href="../css/content.css">
+   
+    </head>
+    <body>
+    
+        <div class="content">
+            <span class="titull_fqKlientit">COFFEE DEA</span>
+           
+            <div class="mbeshtjelles">
+                <h2 class="newAccount_titull">PAGESA:</h2>
+
+                <form>
+                    <label for="emri">EMRI</label>
+                    <input type="text" id="emri" placeholder="emri" required>
+                    
+                    <label for="shuma">SHUMA</label>
+                    <input type="number" id="shuma" placeholder='shuma' min="1">
+                  
+                    <label for="lloji">LLOJI(KART/KESH)</label>
+                    <input type="text" id="lloji" placeholder="lloji"  required>
+                    
+                    <label for="numer">NUMRI I KARTES:</label>
+                    <input type="text" id="numer" placeholder="NUMRI I KARTES" required>
+                    
+                    <label for="ADRESA">ADRESA</label>
+                    <input type="text" id="ADRESA" placeholder="adresa" >
+                
+                    <button type="button" id="paguaj">PAGUAJ</button>
+                </form>
+            </div>
+        </div>
+<script>
+       const paguaj=document.getElementById('paguaj');
+paguaj.addEventListener('click',()=>{
+window.location.href='../html/pasmbarimitVeprimit.html';
+}); 
+
+window.addEventListener('DOMContentLoaded', () => {
+    const total = localStorage.getItem('totalPagesa') || 0;
+    document.getElementById('shuma').value = total;
+});
+
+</script>
+    </body>
+</html>

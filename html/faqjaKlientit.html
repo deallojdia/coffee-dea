@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Faqja e Klientit</title>
+        <link rel="stylesheet" href="../css/content.css">
+ 
+    </head>
+    <body>
+       
+        <div class="content"></div>
+    <h1 class="titull_fqKlientit">COFFEE DEA</h1>
+     
+    <class class="mbeshtjelles">
+<h3 class="fq_klient">KLIENT:</h3>
+        <button type="button" id="loginButon" class="login">LOGIN</button><br>
+        <button type="button" id="accountButon" class="newAccount">NEW ACCOUNT</button>
+    </class>
+    <script>
+        const loginButon=document.getElementById('loginButon');
+loginButon.addEventListener('click',()=>{
+window.location.href = '../html/loginKlienti.html';
+});
+
+const accountButon=document.getElementById('accountButon');
+accountButon.addEventListener('click',()=>{
+window.location.href='../html/accountRiKlienti.html';
+});
+    </script>
+     </body>
+</html>
